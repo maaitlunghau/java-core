@@ -1,4 +1,4 @@
-package firstapplication;
+package first_application;
 
 /**
  * A simple Hello World application.
