@@ -18,6 +18,9 @@ public class Array {
 
         // Initialization: array with 5 elements
         numbers = new int[5];
+        for (int i = 0; i < numbers.length; ++i) {
+            System.out.println(i);
+        }
 
         // Declaration + Initialization
         int[] scores = { 10, 20, 30, 40, 50 };
