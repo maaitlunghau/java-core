@@ -8,3 +8,6 @@ javac HelloWorld.java || exit 1
 
 # Run Java application
 java HelloWorld.java
+
+# Remove compiled class files
+rm -f -- *.class
