@@ -36,10 +36,11 @@ public class AdminGuestMode {
                 isGuest = true;
             } else {
                 System.out.println("Please, select either 'ADMIN' or 'GUEST' mode for this program");
+                return;
             }
         }
 
-        if (isAdmin & isGuest) {
+        if (isAdmin && isGuest) {
             System.out.println("Please, select either 'ADMIN' or 'GUEST' mode for this program");
         } else if (isAdmin) {
             System.out.println("Hello, Admin!");
