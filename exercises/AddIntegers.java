@@ -1,10 +1,23 @@
+
 package exercises;
 
+/**
+ * ------------------
+ * Add Integers
+ * ------------------
+ *
+ * Implement a console program which meets the following requirements:
+ *
+ * a. Program accepts two integers as command-line arguments
+ * b. Program converts the arguments from strings to integers
+ * c. Program calculates the sum of the two integers
+ * d. Program prints the sum to the console
+ *
+ * Example:
+ * Command: java AddIntegers.java 10 20
+ * Output: Sum: 30
+ */
 public class AddIntegers {
-
-    // Statement to run: java AddIntegers.java 10 20
-    // - 10: args[0]
-    // - 20: args[1]
 
     public static void main(String[] args) {
         // Parse command-line arguments to integers
