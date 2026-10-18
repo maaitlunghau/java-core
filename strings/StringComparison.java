@@ -1,5 +1,7 @@
 package strings;
 
+import java.util.Objects;
+
 public class StringComparison {
 
     public static void main(String[] args) {
@@ -58,5 +60,33 @@ public class StringComparison {
         String copy = original;
         System.out.println(original == copy); // true
         System.out.println(original.equals(copy)); // true
+
+        // --------------------------------------------
+        // Null-Safe String Comparison
+        //
+        // - Calling equals() on null throws
+        // NullPointerException.
+        // - Use a constant String or Objects.equals()
+        // to compare safely.
+        // --------------------------------------------
+        String name = null;
+
+        // Unsafe: throws NullPointerException
+        // System.out.println(name.equals("Hau"));
+
+        // Safe: call equals() on a non-null constant
+        System.out.println("Hau".equals(name)); // false
+
+        // Safe: Objects.equals() handles null values
+        System.out.println(Objects.equals(name, "Hau")); // false
+
+        // Both values are null
+        String first = null;
+        String second = null;
+        System.out.println(Objects.equals(first, second)); // true
+
+        // Case-insensitive comparison with null safety
+        String username = null;
+        System.out.println("admin".equalsIgnoreCase(username)); // false
     }
 }
